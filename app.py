@@ -17,7 +17,9 @@ def home():
     return render_template("index.html")
 
 # create two more pages and add the functionality for email and password
-
+@app.route("/email/")
+def get_email():
+    return render_template("get_email.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
